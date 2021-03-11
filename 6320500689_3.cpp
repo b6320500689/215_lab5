@@ -3,26 +3,31 @@ int main ()
 {
 	int n,m=1,i,a=2,x,j;
 	scanf ("%d",&n);
-	for (i=0; i<n; i++)
-	x=0;
-	while (n!=1)
+	for (i=0; i>n; i++)
 	{
-		while (n%a==0)
+		x=0;
+		while (n!=1)
 		{
-			
-			n=n/a;
-			if (a!=2 && a!=3 && a!=5)
-				x=1;
+			while (n%a==0)
+			{
+				n=n/a;
+				if (a!=2 && a!=3 && a!=5)
+					x=1;
+			}
+			a++;
 		}
-		a++;
-	}
-	if (x==0)
-	{
-		printf ("%d",i);
-  	
-	}
-	
 		
-	return 0;
+		if (x==0)
+		{
+			x++;
+			if (x==n)
+			{
+				break;
+			}
+		}
+	printf ("%d",i);
+	}
+return 0;
 }
+
 
