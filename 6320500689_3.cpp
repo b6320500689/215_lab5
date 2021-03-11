@@ -1,21 +1,28 @@
 #include <stdio.h>
 int main ()
 {
-	int n,m=1,i;
+	int n,m=1,i,a=2,x;
 	scanf ("%d",&n);
-	for (i=0; i<n; i++)
+	///for (i=0; i<n; i++)
+	x=0;
+	while (n!=1)
 	{
-		if ((m%2==0 || m%3==0 || m%5==0 || m==1 || m==2 || m==3 || m==5) && (m!=7))
+		while (n%a==0)
 		{
-			m++;
+			
+			n=n/a;
+			if (a!=2 && a!=3 && a!=5)
+				x=1;
 		}
-		else
-		{
-			i--;
-			m++;
-		}
-	
+		a++;
+		
 	}
-	printf ("%d",m);
+	if (x==0)
+	printf ("is ugly number");
+	else
+	printf ("is not ugly number");
+		
+	
 	return 0;
 }
+
