@@ -5,6 +5,9 @@ int main ()
 	int m,i;
 	scanf ("%d",&m);
 	for (i=0; i<m; i++)
-	printf ("%d",n[i]);
+	{
+		printf ("%d",n[i]);
+	}
+		
 	return 0;
 }
