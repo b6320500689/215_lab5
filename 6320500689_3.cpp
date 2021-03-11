@@ -1,13 +1,21 @@
 #include <stdio.h>
 int main ()
 {
-	int n[11] = {1,2,3,4,5,6,8,9,10,12,15};
-	int m,i;
-	scanf ("%d",&m);
-	for (i=0; i<m; i++)
+	int n,m=1,i;
+	scanf ("%d",&n);
+	for (i=0; i<n; i++)
 	{
-		printf ("%d",n[i]);
+		if ((m%2==0 || m%3==0 || m%5==0 || m==1 || m==2 || m==5) && (m!=7))
+		{
+			m++;
+		}
+		else
+		{
+			i--;
+			m++;
+		}
+	
 	}
-		
+	printf ("%d",m);
 	return 0;
 }
