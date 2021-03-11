@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main ()
 {
-	int n,m=1,i,a=2,x;
+	int n,m=1,i,a=2,x,j;
 	scanf ("%d",&n);
-	///for (i=0; i<n; i++)
+	for (i=0; i<n; i++)
 	x=0;
 	while (n!=1)
 	{
@@ -15,14 +15,14 @@ int main ()
 				x=1;
 		}
 		a++;
-		
 	}
 	if (x==0)
-	printf ("is ugly number");
-	else
-	printf ("is not ugly number");
-		
+	{
+		printf ("%d",i);
+  	
+	}
 	
+		
 	return 0;
 }
 
