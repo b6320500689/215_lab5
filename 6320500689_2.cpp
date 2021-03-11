@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-	int n=1,x,y;
+	int n=1,x=0,y;
 	if (n<=1000 && n>=1)
 		scanf("%d",&n);
 	if (n%2 == 0)
