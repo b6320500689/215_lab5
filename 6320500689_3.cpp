@@ -19,9 +19,10 @@ int main ()
 		
 		if (x==0)
 		{
-			x++;
+			
 			if (x==n)
 			{
+				i++;
 				break;
 			}
 		}
