@@ -1,11 +1,12 @@
 #include <stdio.h>
 int main ()
 {
-	int n,m=1,i,a=2,x,j;
+	int n,i,a=2,x,k=0,m=0;
 	scanf ("%d",&n);
-	for (i=0; i>n; i++)
+	for (i=1; i>0; i++)
 	{
 		x=0;
+		m=i;
 		while (n!=1)
 		{
 			while (n%a==0)
@@ -17,16 +18,16 @@ int main ()
 			a++;
 		}
 		
-		if (x==0)
+		if (m==1)
 		{
-			
-			if (x==n)
+			k++;
+			if (k==n)
 			{
-				i++;
+				printf ("%d",i);
 				break;
 			}
 		}
-	printf ("%d",i);
+	
 	}
 return 0;
 }
