@@ -15,16 +15,28 @@ int main ()
 		y = ((n+x)/2);
 	}
 	
-	for(i=0; i<(n+x)/2; i++)
+	for (i=0; i<(n+x)/2; i++)
 	{
-		for(j=0; j<n; j++)
+		for (j=0; j<n; j++)
 		{
-			if(j == (n/2)-i || j == (n/2)+i)
+			if (j == (n/2)-i || j == (n/2)+i)
 				printf ("*");
 			else
 				printf ("_");
 		}
-		printf("\n");
+		printf ("\n");
+	}
+	
+	for (i=0; i<=y; i++)
+	{
+		for (j=0; j<n; j++)
+		{
+			if (j == i || j == (n-1)-i)
+				printf ("*");
+			else
+				printf ("_");
+		}
+		printf ("\n");
 	}
 	return 0;
 }
